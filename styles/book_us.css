@@ -1,0 +1,53 @@
+.container {
+	/* extra padding for to top button */
+	padding: 15px 10px 20px 10px; 
+}
+
+
+.container .cscf { grid-column: 1 / span 3; }
+
+.container .bs { grid-column: 1 / span 3; }
+
+.container .isft {
+	grid-column: 1 / span 3;
+	margin: auto;
+	
+}
+
+.container .isft img { 
+	margin-top: 10px;
+	max-width: 95%;
+	height: auto;
+ }
+
+.container .ds {
+	grid-column: 1 / span 3;
+	margin: auto;
+	
+}
+
+.container .ds img { 
+	margin-top: 10px; 
+	max-width: 95%;
+	height: auto;
+}
+
+@media screen and (max-width: 900px) {
+	/* when the viewport too small, make content in 1 column */
+	.container .cscf { 
+		grid-column: 1;
+		margin-top: 10px;
+	}
+	.container .bs { 
+		grid-column: 1;
+		margin-top: 10px;
+	}
+	.container .isft { 
+		grid-column: 1;
+		margin-top: 10px;
+	}
+	.container .ds { 
+		grid-column: 1;
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,41 @@
+.container {
+	/* extra padding for to top button */
+	padding: 15px 10px 20px 10px; 
+}
+
+.container .hcu { 
+	grid-column: 1 / span 3; 
+	margin-top: -5px;
+}
+
+.container .wyacimg {
+	grid-column: 1;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+.container .wyac {
+	grid-column: 2 / span 2;
+	margin: auto;
+}
+
+.container .er {
+	grid-column: 1 / span 3;
+	margin-top: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+	/* when the viewport too small, make content in 1 column */
+	.container .hcu { 
+		grid-column: 1;
+		margin-top: 5px; 
+	}
+	.container .wyacimg { 
+		grid-column: 1;
+		margin: 10px auto 10px auto;
+	}
+	.container .wyac { grid-column: 1; }
+	.container .er { grid-column: 1; }
+}

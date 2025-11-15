@@ -1,0 +1,232 @@
+const d = new Date();
+document.getElementById("fullyear").innerHTML = d.getFullYear();
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const m = new Date();
+
+let month = months[m.getMonth()]; 
+document.getElementById("month").innerHTML = month;
+
+const lastday = function(y, m){
+	return new Date(y, m + 1,0).getDate();
+}
+
+for ( i = 0; i<lastday(d.getFullYear(), d.getMonth()); i++) {
+
+const para = document.createElement("li");
+const node = document.createTextNode(i+1);
+para.appendChild(node);
+
+const element = document.getElementById("days");
+element.appendChild(para);
+}
+var x = document.getElementById("days").value;
+/*
+
+
+const para = document.createElement("p");
+const node = document.createTextNode(lastday(d.getFullYear(), d.getMonth()));
+para.appendChild(node);
+
+const element = document.getElementById("days");
+element.appendChild(para);
+*/
+
+
+
+
+:root {
+	--background-color: #CD8C3D; /* lightest tan */
+	--header-color: #94652C;
+	--border-color: #5A3D1A;
+}
+
+body { background-color: var(--background-color); }
+
+.container {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 2fr;
+	align-content: space-evenly;
+}
+
+.container > div {
+	color: #010100;
+	font-size: 30px;
+	text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	/* start shrinking text when container gets really small */
+	.container > div { font-size:5vw; }
+}
+
+.container div > h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 400px;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	background-color: var(--header-color);
+	border-radius: 25px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--border-color);
+}
+
+.container > div > h2, h3, p {
+	padding-bottom:5px; 
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container .item0 {
+	grid-column: 1 / span 3;
+	margin-top: 25px;
+	border-radius: 25px;
+	background-color: var(--header-color);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--border-color);
+}
+
+.container .item1 {
+	grid-column: 1/ span 3;
+	width: 800px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	display: flex;
+	margin: auto;
+	justify-content: center;
+}
+ul {list-style-type: none;}
+.calendarheader {
+  padding: 70px 25px;
+  max-width: 800px;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.calendarheader ul {
+  margin: 0;
+  padding: 0;
+}
+
+.calendarheader ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.calendarheader .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.calendarheader .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+	
+	display: flex;
+justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+	text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    padding-left: 30px;
+  background: #eee;
+  margin: 0;
+}
+
+
+
+.days li {
+  list-style-type: none;
+    padding-left: 12px;
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:25px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+@media screen and (max-width: 900px) {
+	/* when the viewport too small, make content in 1 column */
+	.container .item0 { grid-column: 1; }
+	.container .item1 { grid-column: 1; }
+	.container .item2 { grid-column: 1; }
+}
+
+
+
+
+
+<!-------- calendar start -------->
+			<div class="item1"> 
+				<div class="calendarheader">
+					<ul>
+						<li class="prev">&#10094;</li>
+						<li class="next">&#10095;</li>
+						<li>
+							<span id="month"></span>
+							<span id="fullyear"></span>
+						</li>
+					</ul>
+				</div>
+				
+				<ul class="weekdays">
+					<li>Mon</li>
+					<li>Tue</li>
+					<li>Wed</li>
+					<li>Thur</li>
+					<li>Fri</li>
+					<li>Sat</li>
+					<li>Sun</li>
+					
+				</ul>
+				
+				<ul class="days" id="days">
+					
+				</ul>
+
+			</div>
+			<!--------- calendar end ------<div class="ca"></div>--->
+
+

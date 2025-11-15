@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- tag allows site to work on all devices and screen resolutions -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/sitewide_styles.css">
+		<link rel="stylesheet" href="styles/container_styles.css">
+		<link rel="stylesheet" href="styles/events.css">
+		<!-- icon library for menu bars + social media links -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<title>Spizzirri's Reptile Rescue & Rehabilitation</title>
+	</head>
+	
+	
+	<body>
+		<!-- top of page deco with icon -->
+		<div class="page-head">
+			<a href="home.html">
+				<img id="logo" src="./images/logo.png" alt="Spizzirri's Reptile Rescue & Rehabilitation">
+			</a>
+		</div>
+		<!-------------------------------->
+		
+		<!------- navigation start ------->
+		<nav class="topnav" id="topnavbar">
+			<a href="home.html">Home</a>
+			<a href="events.html" class="active">Events</a>
+			<a href="ambassador_animals.html">Ambassador Animals</a>
+			<a href="testimonials_reviews.html">Testimonials</a>
+			<a href="book_us.html">Book Us</a>
+			<a href="contact_us.html">Contact Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="responsive_navbar()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+		<!-------- navigation end -------->
+		
+		<!-------- page container -------->
+		
+		<div class="container">
+			<div class="section_titles"> <h2>Event Schedule</h2> </div>
+			<div class="upcoming_events">
+				<h4>No events are scheduled soon.</h4>
+				<p>Please come back later to recieve event updates.</p>
+			</div>
+
+		</div>
+		<!------ page container end ------>
+	
+		<!-- return to top button -->
+		<button onclick="topFunction()" id="top_button" title="Go to top">Top</button>
+		
+		<div class="footer">
+			<p> <!-- footer text and links -->
+				SRRR is an official 501(c)(3) nonprofit<br> Contact Us <a href="tel:+17087049911">708-704-9911</a><br>
+				<a href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/"><i class="fa fa-facebook"></i></a>
+			</p>
+		</div>
+		
+		<script src="./website_functions.js"></script>
+		<script src="./calendar.js"></script>
+	</body>
+
+
+</html>
