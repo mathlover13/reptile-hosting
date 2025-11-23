@@ -5,30 +5,45 @@
 
 .container {
 	display: grid;
-	gap: 10px;
+	gap: 10px; background-color: dodgerblue;
 	grid-template-columns: 1fr 1fr 1fr;
-	padding: 15px 10px 10px 10px;
-	/* bottom margin is adjusted on each page to suit to top button */
+	padding: 10px 10px 10px 10px;
 }
 
 .container > div {
+	background-color: #f1f1f1;
 	align-content: center;
 	font-size: 30px;
 	text-align: center;
 }
 
-@media screen and (max-width: 900px) {
-	.container {
-		display: grid;
-		gap: 0px;
-		grid-template-columns: 1fr;
-	}
+.container > div > img {
+	max-width: 375px;
 }
 
-@media screen and (max-width: 500px) {
-	/* start shrinking text when container gets really small */
-	.container > div { font-size: 5vw;  }
+@media screen and (max-width: 1200px) {
+	/* fit text to viewport as the window size decreases */
+	.container > div { font-size: 2.5vw; }
 }
+
+@media screen and (max-width: 900px) {
+	.container {
+		/* switch to single column grid layout */
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.container > div { font-size: 3.5vw; }
+}
+
+/* start expanding text when container gets smaller */
+@media screen and (max-width: 600px) {
+	.container > div { font-size: 4.5vw; }
+}
+
+@media screen and (max-width: 400px) { 
+	.container > div { font-size: 5.5vw; }
+}
+/* ------------------------------------------------ */
 
 
 .container .section_titles {
@@ -65,7 +80,7 @@
 
 .container > div > p {
 	background: rgba(199, 125, 51, 0.5);
-	border-radius: 25px;
+	border-radius:15px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: var(--border-color);

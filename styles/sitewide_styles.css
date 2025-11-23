@@ -80,7 +80,7 @@ body { background-image: url(../images/background.png); }
 	color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	/* queries to change the grid layout on smaller screens */
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
@@ -162,7 +162,7 @@ body { background-image: url(../images/background.png); }
 
 .footer {
 	line-height: 1.5;
-	margin-top: 45px;
+	margin-top: 45px; /* lowers footer below to top button */
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: sticky ;
