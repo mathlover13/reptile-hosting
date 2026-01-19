@@ -4,11 +4,14 @@
 		<meta charset="UTF-8">
 		<!-- tag allows site to work on all devices and screen resolutions -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles/sitewide_styles.css">
-		<link rel="stylesheet" href="styles/container_styles.css">
+		<link rel="stylesheet" href="styles/pagehead_navbar.css">
+		<link rel="stylesheet" href="styles/body_containers.css">
+		<link rel="stylesheet" href="styles/topbutton_footer.css">
 		<link rel="stylesheet" href="styles/events.css">
 		<!-- icon library for menu bars + social media links -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="icon" type="image/x-icon" href="./images/favicon/android-chrome-512x512.png">
 		
 		<title>Spizzirri's Reptile Rescue & Rehabilitation</title>
 	</head>
@@ -24,25 +27,33 @@
 		<!-------------------------------->
 		
 		<!------- navigation start ------->
-		<nav class="topnav" id="topnavbar">
+		<nav class="topnav" id="myTopnav">
 			<a href="home.html">Home</a>
-			<a href="events.html" class="active">Events</a>
-			<a href="ambassador_animals.html">Ambassador Animals</a>
-			<a href="testimonials_reviews.html">Testimonials</a>
+			<a href="events.html" class="active">Events</a>	
+			<div class="dropdown">
+				<button class="dropbtn">Ambassador Animals<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="./ambassador_pages/ambassador_lizards.html">Lizards</a>
+					<a href="./ambassador_pages/ambassador_turtles.html">Turtles</a>
+					<a href="./ambassador_pages/ambassador_snakes.html">Snakes</a>
+				</div>
+			</div>
+			<a href="testimonials_reviews.html">Testimonials & Reviews</a>
 			<a href="book_us.html">Book Us</a>
 			<a href="contact_us.html">Contact Us</a>
-			<a href="javascript:void(0);" class="icon" onclick="responsive_navbar()">
-				<i class="fa fa-bars"></i>
-			</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</nav>
 		<!-------- navigation end -------->
 		
 		<!-------- page container -------->
 		<div class="container">
+		
 		<div class="section_titles"><h2>Coming Soon!</h2></div>
-		<div class="uc">
-				<h4>Page Under Construction</h4>
-				<p>This website is being constructed and updated. Thank your for your patience! </p>
+		
+			<div class="uc">
+					<h4>Page Under Construction</h4>
+					<p>This website is being constructed and updated. Thank your for your patience! </p>
+				</div>
 			</div>
 		</div>
 		<!------ page container end ------>
@@ -58,7 +69,7 @@
 		</div>
 		
 		<script src="./website_functions.js"></script>
-		<script src="./calendar.js"></script>
+		<script src="./calendar_script.js"></script>
 	</body>
 
 

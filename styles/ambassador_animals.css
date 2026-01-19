@@ -1,8 +1,4 @@
-.container { margin-bottom: 340px; } /* WARNING!: delete this from finished page because margin is not needed*/
-
-.container .uc { grid-column: 1 / span 3; }
-
-@media screen and (max-width: 900px) {
-	/* when the viewport too small, make content in 1 column */
-	.container .uc { grid-column: 1; }
-}
+/* waiting on new photos to adjust page to more customized layout */
+.container .lizard { grid-column: 1/ span 3; }
+.container .turtles { grid-column: 1/ span 3; }
+.container .snakes { grid-column: 1/ span 3; }

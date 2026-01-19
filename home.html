@@ -4,11 +4,14 @@
 		<meta charset="UTF-8">
 		<!-- tag allows site to work on all devices and screen resolutions -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles/sitewide_styles.css">
-		<link rel="stylesheet" href="styles/container_styles.css">
+		<link rel="stylesheet" href="styles/pagehead_navbar.css">
+		<link rel="stylesheet" href="styles/body_containers.css">
+		<link rel="stylesheet" href="styles/topbutton_footer.css">
 		<link rel="stylesheet" href="styles/home.css">
 		<!-- icon library for menu bars + social media links -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="icon" type="image/x-icon" href="./images/favicon/android-chrome-512x512.png">
 		
 		<title>Spizzirri's Reptile Rescue & Rehabilitation</title>
 	</head>
@@ -18,22 +21,27 @@
 		<!-- top of page deco with icon -->
 		<div class="page-head">
 			<a href="home.html">
-				<img id="logo" src="./images/logo.png" alt="Spizzirri's Reptile Rescue & Rehabilitation">
+				<img id="logo" src="./images/logo.png" alt="Spizzirri's Reptile Rescue & Rehabilitation is placed in the center of a tree with large roots and vines. Reptiles are strewn about the letters.">
 			</a>
 		</div>
 		<!-------------------------------->
 		
 		<!------- navigation start ------->
-		<nav class="topnav" id="topnavbar">
+		<nav class="topnav" id="myTopnav">
 			<a href="home.html" class="active">Home</a>
-			<a href="events.html">Events</a>
-			<a href="ambassador_animals.html">Ambassador Animals</a>
-			<a href="testimonials_reviews.html">Testimonials</a>
+			<a href="events.html">Events</a>	
+			<div class="dropdown">
+				<button class="dropbtn">Ambassador Animals<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="./ambassador_pages/ambassador_lizards.html">Lizards</a>
+					<a href="./ambassador_pages/ambassador_turtles.html">Turtles</a>
+					<a href="./ambassador_pages/ambassador_snakes.html">Snakes</a>
+				</div>
+			</div>
+			<a href="testimonials_reviews.html">Testimonials & Reviews</a>
 			<a href="book_us.html">Book Us</a>
 			<a href="contact_us.html">Contact Us</a>
-			<a href="javascript:void(0);" class="icon" onclick="responsive_navbar()">
-				<i class="fa fa-bars"></i>
-			</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</nav>
 		<!-------- navigation end -------->
 		
@@ -42,37 +50,48 @@
 			<!-- who we are is breif/general overview about us -->
 			<div class="section_titles"> <h2>Who We Are</h2> </div> 
 			
-			<!-- second row grid items -->
 			<div class="wwa_image"> <img src="./images/lizard.jpeg" alt="Niko holding one of his lizards."> </div>
 			<div class="wwa_text"> 
 				<h4>What We Do</h4>
-				<p>Spizzirri's Reptile Rescue & Rehabilitation is a nonprofit organization that is based in Kankakee county, Illinois. We rescue reptiles that can no longer be cared for due to unfortunate circumstances. The exotic animals in our care are placed in enviornments that promote the most stress free rehabilitation. Incoming animals are evaluated on a case by case basis to accommodate exotics with pre-exsisting health conditions. With our rescues, we educate the public through events and shows.</p>
+				
+				
+				<p>
+					 Our goal is to reduce the amount of exotics being released into the wild and rehabilitate animals in need of care. Exotic animals are demanding pets! We want to prepare owners for the difficulties of ownership. Additionally, we teach about dangers of owning and releasing invasive species into the wild to advocate for the natural biodiversity of the environment.
+				</p>
+				
+				<p>
+					 We are here as a community resource for people facing unfortunate circumstances in life. When someone can no longer care for their pets, we take in their exotic animals. While in our care, each animal is provided the proper environment to undergo the most stress free rehabilitation possible.
+					 
+					 
+				</p>
+				
 			</div>
-			<!--------------------------->
 			
-			<!-- information on shows and events -->
-			<div class="section_titles"> <h2>Shows and Events</h2> </div> 
-			<!-- fourth row grid items -->
-			<div class="wsu_text"> 
-				<h4>Want to See Us?</h4>
-				<p>We put on educational shows and attend events as ambassadors for reptiles. Our Organization is not limited to Kankakee. We also educate the broader community by attending events nationwide. Visit Our <a href="events.html">events</a> page to see where we are putting on a show next. Our ambassadors might be presenting near you!</p>
-			</div> 
-			<div class="wsu_image"> <img src="./images/show.jpg" alt="A group of children attending an educational show; they are being shown snakes."> </div>
-			<div class="bu_image"> <img src="./images/hollywood_lizard.jpeg" alt="A lizard perched on a rock; the hollywood sign is visible in the background."> </div>
-			<div class="bu_text">
-				<h4>Book Us!</h4>
-				<p>Do you want us to attend your event? Are you interested in our educational shows? There are multiple packages available for different gatherings. For details about our packages, events we can attend, and booking information, please visit the <a href="book_us.html">book us</a> page.</p>
+			<div class="ms_text"> 
+				<h4>About Us</h4>
+				<p>
+					We are a nonprofit exotic animal rescue organization based in Kankakee, IL. You can verify our nonprofit status <a target="_blank" rel="noopener noreferrer" href="https://apps.irs.gov/app/eos/">here</a>; our EIN number is: 88-1474420.
+					We are dedicated to rescuing exotic animals and educating the public. Our efforts are funded through educational shows, fundraisers, and grants. The funding we receive goes directly towards our rescues' care and the facility's maintenance fees.
+				</p>
 			</div>
-			<!--------------------------->
 			
 			<!-- information about helping out and surrendering pets -->
-			<div class="section_titles"> <h2>Volunteer and Rescue Information</h2> </div> 
+			<div class="section_titles"> <h2>Help and Services</h2> </div> 
+			
 			<!-- sixth row grid items --->
 			<div class="vri_text">
 				<h4>Help Us</h4> 
-				<p>As mentioned above, Spizzirri's Reptile Rescue & Rehabilitation is a non-for profit organization. We are always accepting volunteers to help us around the facility. To volunteer, please contact us by calling <a href="tel:+17087049911">708-704-9911</a>.<br>We hope to see you soon!</p>
-				<h4>Exotic(s) Need Rescue?</h4>
-				<p>Do you know of animals in need of rescue? Do your own pet(s) need rescuing? Please visit our <a href="contact_us.html">contact us</a> page for information about how to surrender your pet or ask us to carry out a rescue. Do not drop off animals without talking to us first, thank you.</p>
+				<p>
+					We are always looking for volunteers and foster families. If you are interested in volunteering or fostering, please contact us by calling <a href="tel:+17087049911">708-704-9911</a>.
+				</p>
+				<h4>Rescue and Adoption</h4>
+				<p>
+					We take in surrendered animals and rescue wildlife. For more information on rescuing or surrendering exotic animals, please visit our <a href="contact_us.html">contact us</a> page for more information. Do not drop off animals without talking to us first, thank you.
+
+				</p>
+				<p>
+				Some of our surrendered exotic animals are eligible for adoption! We make postings about our adoptable rescues on our <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/">facebook</a> page.
+				</p>
 			</div>
 			<!--------------------------->
 		</div>

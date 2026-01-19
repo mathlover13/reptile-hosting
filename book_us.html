@@ -4,11 +4,14 @@
 		<meta charset="UTF-8">
 		<!-- tag allows site to work on all devices and screen resolutions -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles/sitewide_styles.css">
-		<link rel="stylesheet" href="styles/container_styles.css">
+		<link rel="stylesheet" href="styles/pagehead_navbar.css">
+		<link rel="stylesheet" href="styles/body_containers.css">
+		<link rel="stylesheet" href="styles/topbutton_footer.css">
 		<link rel="stylesheet" href="styles/book_us.css">
 		<!-- icon library for menu bars + social media links -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="icon" type="image/x-icon" href="./images/favicon/android-chrome-512x512.png">
 		
 		<title>Spizzirri's Reptile Rescue & Rehabilitation</title>
 	</head>
@@ -24,21 +27,50 @@
 		<!-------------------------------->
 		
 		<!------- navigation start ------->
-		<nav class="topnav" id="topnavbar">
+		<nav class="topnav" id="myTopnav">
 			<a href="home.html">Home</a>
-			<a href="events.html">Events</a>
-			<a href="ambassador_animals.html">Ambassador Animals</a>
-			<a href="testimonials_reviews.html">Testimonials</a>
+			<a href="events.html">Events</a>	
+			<div class="dropdown">
+				<button class="dropbtn">Ambassador Animals<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="./ambassador_pages/ambassador_lizards.html">Lizards</a>
+					<a href="./ambassador_pages/ambassador_turtles.html">Turtles</a>
+					<a href="./ambassador_pages/ambassador_snakes.html">Snakes</a>
+				</div>
+			</div>
+			<a href="testimonials_reviews.html">Testimonials & Reviews</a>
 			<a href="book_us.html" class="active">Book Us</a>
 			<a href="contact_us.html">Contact Us</a>
-			<a href="javascript:void(0);" class="icon" onclick="responsive_navbar()">
-				<i class="fa fa-bars"></i>
-			</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</nav>
 		<!-------- navigation end -------->
 		
 		<!-------- page container -------->
 		<div class="container">
+		
+			<!-- information on shows and events -->
+			<div class="section_titles"> <h2>Shows and Events</h2> </div> 
+			<!-- fourth row grid items -->
+			<div class="bu_image"> <img src="./images/hollywood_lizard.jpeg" alt="A lizard perched on a rock; the hollywood sign is visible in the background."> </div>
+			<div class="bu_text">
+				<h4>Book Us!</h4>
+				<p>
+					To inquire about our shows and services, call us at <a href="tel:+17087049911">708-704-9911</a>. We can attend a wide variety of venues, such as: youth centers, schools, park districts, and more! We teach about exotics' ideal environments, care requirements, common medical issues, the environment, and much more. The shows and booths are tailored to the learning level of the guests attending the event.
+				</p>
+			</div>
+			
+			<div class="wsu_text"> 
+				<h4>Want to See Us?</h4>
+				<p>
+					We put on educational shows and attend events as ambassadors for reptiles. Our Organization is not limited to Kankakee. We also educate the broader community by attending events nationwide. Visit Our <a href="events.html">events</a> page to see where we are putting on a show next. Our ambassadors might be presenting near you!
+				</p>
+			</div>
+			
+			<div class="wsu_image"> <img src="./images/show.jpg" alt="A group of children attending an educational show; they are being shown snakes."> </div>
+			<!--------------------------->
+		
+		
+		
 			<div class="section_titles"><h2>Show/Event Packages</h2></div>
 			<div class="cscf">
 				<h4>Camp Shows/County Fairs</h4>
@@ -50,12 +82,12 @@
 			</div>
 			<div class="isft">
 				<h4>In School Field Trips</h4>
-				<img src="./images/show.jpg" width="375" height="275" alt="A group of children attending an educational show; they are being shown snakes."> 
+				<!-- <img src="./images/show.jpg" width="375" height="275" alt="A group of children attending an educational show; they are being shown snakes."> -->
 				<p>$200-$450 for each show after the first. This show package includes 10-15 ambassador reptiles.</p>
 			</div>
 			<div class="ds">
 				<h4>Display set-ups</h4>
-				<img src="./images/table_setup.jpeg" width="375" height="300" alt="Spizzirri's Reptile Rescue & Rehabilitation booth at a convention">
+				<!-- <img src="./images/table_setup.jpeg" width="375" height="300" alt="Spizzirri's Reptile Rescue & Rehabilitation booth at a convention"> -->
 				<p>Prices may very per event.</p>
 			</div>
 		</div>

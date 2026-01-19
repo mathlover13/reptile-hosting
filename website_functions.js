@@ -2,8 +2,8 @@
 
 // -------------------------------- responsive navbar -------------------------------- //
 // toggle hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
-function responsive_navbar() {
-  var x = document.getElementById("topnavbar");
+function myFunction() {
+  var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
@@ -22,7 +22,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topbutton.style.display = "block";
-  } else {
+  } 
+  else {
     topbutton.style.display = "none";
   }
 }

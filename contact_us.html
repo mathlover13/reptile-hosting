@@ -4,11 +4,14 @@
 		<meta charset="UTF-8">
 		<!-- tag allows site to work on all devices and screen resolutions -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles/sitewide_styles.css">
-		<link rel="stylesheet" href="styles/container_styles.css">
+		<link rel="stylesheet" href="styles/pagehead_navbar.css">
+		<link rel="stylesheet" href="styles/body_containers.css">
+		<link rel="stylesheet" href="styles/topbutton_footer.css">
 		<link rel="stylesheet" href="styles/contact_us.css">
 		<!-- icon library for menu bars + social media links -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="icon" type="image/x-icon" href="./images/favicon/android-chrome-512x512.png">
 		
 		<title>Spizzirri's Reptile Rescue & Rehabilitation</title>
 	</head>
@@ -24,34 +27,57 @@
 		<!-------------------------------->
 		
 		<!------- navigation start ------->
-		<nav class="topnav" id="topnavbar">
+		<nav class="topnav" id="myTopnav">
 			<a href="home.html">Home</a>
-			<a href="events.html">Events</a>
-			<a href="ambassador_animals.html">Ambassador Animals</a>
-			<a href="testimonials_reviews.html">Testimonials</a>
+			<a href="events.html">Events</a>	
+			<div class="dropdown">
+				<button class="dropbtn">Ambassador Animals<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="./ambassador_pages/ambassador_lizards.html">Lizards</a>
+					<a href="./ambassador_pages/ambassador_turtles.html">Turtles</a>
+					<a href="./ambassador_pages/ambassador_snakes.html">Snakes</a>
+				</div>
+			</div>
+			<a href="testimonials_reviews.html">Testimonials & Reviews</a>
 			<a href="book_us.html">Book Us</a>
 			<a href="contact_us.html" class="active">Contact Us</a>
-			<a href="javascript:void(0);" class="icon" onclick="responsive_navbar()">
-				<i class="fa fa-bars"></i>
-			</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</nav>
 		<!-------- navigation end -------->
 		
 		<!-------- page container -------->
 		<div class="container">
-			<!-- breif/general overview about us -->
+			<!-- breif/general overview about us -->  
 			<div class="section_titles"> <h2>How to Contact Us</h2> </div>
 			<div class="hcu"> 
-				<p>The best was to contact us is via phone. You can call us at <a href="tel:+17087049911">708-704-9911</a>. You can also reach out to us over email at Spizzirrireptilerescue@gmail.com We look forward to speaking with you.</p>
+				<p>The best was to contact us is via phone. You can call us at <a href="tel:+17087049911">708-704-9911</a>. You can also reach out to us over email at <a href="mailto:spizzirrireptilerescue@gmail.com">spizzirrireptilerescue@gmail.com</a>. We look forward to speaking with you.</p>
 			</div>
 			<div class="wyacimg"> <img src="./images/niko_photo.jpeg" width="280" height="340" alt="Niko posing with a large lizard."> </div>
 			<div class="wyac">
 				<h4>Who You Are Contacting</h4>
-				<p>Niko Spizzirri is our Lead Ambassador that started this organization to save exotic animals and educate the public about them. He devotes his freetime and works around the clock to care for the exotics at the facility. Niko has years of experience working with and taking care of animals ranging from guinea pigs to crocodiles. The educational presentations given at events will be carried out by Niko and the exotics from our rescue.</p>
+				<h3>Niko Spizzirri: Lead Ambassador</h3>
+				<p>
+					Niko founded this organization out of a love for exotic animals. He largely cares for and shelters reptiles; however, he also tends to a variety of exotic mammals and fish. Niko dedicates his free time to caring for the shelter's animals and maintaining the facility.
+				</p>
 			</div>
+			
+			<div class="section_titles"> <h2>Rescue and Surrender Information</h2> </div>
 			<div class="er">
-				<h4>Exotic Rescue</h4>
-				<p>Do you need to surrender your exotic(s) due to unfortunate circumstances? Do you know of exotics in need of rescue and rehabilitation? Please call <a href="tel:+17087049911">708-704-9911</a> to get the rescue process started. You will need to fill out procedural forms before we can accept any animal(s) into the facilty. Please transport your animal in their current cage. Additionaly, bring all of the items used to care for and house the animal(s). We will need to use the current enclosure(s) as temporary housing upon arrival.</p>
+			
+			
+				<h4>Inquire About Rescue and Surrender</h4>
+				<p>
+					If you know of animals in need rescue and rehabilitation or you need to surrender your exotics, please call <a href="tel:+17087049911">708-704-9911</a> to get the process started. We will send you procedural forms to fill out before we accept any animals into the facility. Please, do not drop off animals before your forms are approved, thank you.
+				</p>
+				<h4>What We Request Upon Arrival</h4>
+				<p>
+					If you are surrendering your pets, please transport them in their current cages. Additionally, bring all of the items you currently have in the enclosure(s), and the care items you own for the animals. We will need to use the current enclosures and setups as temporary housing upon arrival.
+				</p>
+				
+				<h4>We are a No-kill Shelter</h4>
+				<p>
+					We do not put any of our exotics down due to overwhelming numbers. To manage our capacity, we seek out suitable foster families to care for some of our animals. Additionally, we manage our facility's capacity by placing healthy surrenders up for adoption.
+				</p>
 			</div>
 			<!-- add an occupancy counter? -->
 		</div>
