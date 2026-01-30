@@ -4,7 +4,7 @@
 	/* link hover lower opacity */
 	--link-active: #875A23; /* color upon click */
 	--link-visited: #291C0B;
-	
+
 	/* footer fa fa icon lowers opacity on hover */
 	--fa-icons: #A4AC86;
 	--footer-color: #2D1807;
@@ -13,10 +13,11 @@
 /* ---------------- scroll to top button ---------------- */
 #top_button {
 	display: none; /* button hidden by default */
-	position: fixed;
+	position: sticky;
+	z-index: 1;
 	bottom: 145px; /* place the button at the bottom of the page */
-	right: 30px; /* place the button from the right */
-	z-index: 99; /* put button on top layer */
+	float:right;
+
 	border: none; 
 	outline: none; 
 	background-color: var(--buttons-color);
@@ -46,10 +47,9 @@
 	margin-top: 60px; /* lowers footer below to top button */
 	padding-top: 5px;
 	padding-bottom: 5px;
-	position: sticky ;
+	position: sticky;
 	bottom: 0;
 	width: 100%;
-	/* background-color: var(--footer-color); */
 	background-image: url(../images/footer.png);
 	color: white;
 	text-align: center;

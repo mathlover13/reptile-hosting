@@ -34,3 +34,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // ----------------------------------------------------------------------------------- //
+
+// check is used to fix image sizing issues on mobile
+if(window.innerHeight > window.innerWidth) {
+	// checking when website is put into portrait mode
+	const matches = document.querySelector(":root");
+	matches.style.setProperty('--image-width', '1vw + 250px');
+}

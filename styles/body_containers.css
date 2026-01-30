@@ -2,7 +2,7 @@
 :root {
 --body-color: #A68A64;
 --font-size: 25px;
-
+--image-width: 2vw + 400px;
 --header-color: #656D4A;
 --border-color: #333D29;
 --body-paragraph-color: #AE9C7A;
@@ -29,8 +29,8 @@ body { background-color: var(--body-color); }
 	text-align: center;
 }
 
-.container > div > img {
-	max-width: 375px;
+.container .image {
+	width: calc(var(--image-width));
 	border-radius: 25px;
 	background-color: var(--header-color);
 	border-style: solid;
@@ -128,3 +128,4 @@ body { background-color: var(--body-color); }
 	color: var(--link-base);
 }
 /* ------------------ end styling links ----------------- */
+
