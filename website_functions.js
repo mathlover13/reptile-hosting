@@ -13,14 +13,15 @@ function myFunction() {
 // ----------------------------------------------------------------------------------- //
 
 // ---------------------------------- to top button ---------------------------------- //
-// get the button from document
-let topbutton = document.getElementById("top_button");
+let topbutton = document.getElementById("top_button"); // get the button from document
 
-// when the user scrolls down 20px from the top of the document, show the button (toggle it on)
+// when the user scrolls down, show the button (toggle it on)
 window.onscroll = function() {scrollFunction()};
 
+const scroll_amount = 120; // variable that triggers when the to top button shows after scrolling
+
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > scroll_amount || document.documentElement.scrollTop > scroll_amount) {
     topbutton.style.display = "block";
   } 
   else {
