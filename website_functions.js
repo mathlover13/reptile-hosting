@@ -1,8 +1,8 @@
-// this file holds all the code for the responsive navbar and the to top button
+// this file holds all the code for the responsive navbar, to top button, and sizing adjustments made for mobile
 
 // -------------------------------- responsive navbar -------------------------------- //
-// toggle hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
 function myFunction() {
+	// toggle hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -36,8 +36,8 @@ function topFunction() {
 }
 // ----------------------------------------------------------------------------------- //
 
-// check is used to fix image sizing issues on mobile
-if(window.innerHeight > window.innerWidth) {
+// check is used to fix image sizing issues in horizontal mode on mobile
+if( window.innerHeight > window.innerWidth ) {
 	// checking when website is put into portrait mode
 	const matches = document.querySelector(":root");
 	matches.style.setProperty('--image-width', '1vw + 250px');

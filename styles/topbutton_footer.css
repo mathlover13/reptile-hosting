@@ -12,27 +12,33 @@
 
 /* ---------------- scroll to top button ---------------- */
 #top_button {
+	/* functionality + placement */
 	display: none; /* button hidden by default */
 	position: sticky;
 	z-index: 1;
 	bottom: 145px; /* place the button at the bottom of the page */
-	float:right;
-
-	border: none; 
-	outline: none; 
-	background-color: var(--buttons-color);
-	color: white;
-	cursor: pointer; /* add a mouse pointer on hover */
-	padding: 15px;
-	border-radius: 10px;
+	float: right;
+	
+	/* text + cursor */
+	color: white; /* text color */
 	font-size: 18px;
+	cursor: pointer; /* add a mouse pointer on hover */
+	
+	/* design */
+	background-color: var(--buttons-color);
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	padding: 15px;
 }
 
 #top_button:hover { background-color: var(--navbar-color); } /* change color on hover */
+
 /* -------------- end scroll to top button -------------- */
 
 /* ----------------------- footer ----------------------- */
 .footer .fa {
+	/* fa footer icons */
 	color: var(--fa-icons);
 	font-size: 20px;
 	width: 20px;
@@ -43,16 +49,21 @@
 .fa:hover { opacity: 0.7; } /* lower icon opacity upon hover*/
 
 .footer {
-	line-height: 1.5;
-	margin-top: 60px; /* lowers footer below to top button */
-	padding-top: 5px;
-	padding-bottom: 5px;
+	/* functionality + placement */
 	position: sticky;
 	bottom: 0;
 	width: 100%;
+	margin-top: 60px; /* lowers footer below top button */
+	
+	/* design */
 	background-image: url(../images/footer.png);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	/* text */
 	color: white;
 	text-align: center;
+	line-height: 1.5;
 }
 /* --------------------- end footer --------------------- */
 
