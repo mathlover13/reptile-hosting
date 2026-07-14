@@ -1,3 +1,11 @@
-.container { margin-bottom: 340px; } /* WARNING!: delete this from finished page because margin is not needed*/
+.container .calendartitle { 
+	grid-column: 1 / span 3;
 
-.container .uc { grid-column: 1 / span 3; }
+}
+
+.container .eventcalendar { 
+	grid-column: 1 / span 3;
+
+}
+
+/* NEED TO ADJUST CALENDAR SIZE FOR MOBILE! */

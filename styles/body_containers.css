@@ -1,6 +1,6 @@
 /* code to style the body elements and containers */
 :root {
---body-color: #A68A64;
+--body-color: #A68A64; /* keep hex value for future design reference */
 --font-size: 25px;
 
 --image-width: 2vw + 400px;
@@ -8,7 +8,7 @@
 
 --header-color: #656D4A;
 --border-color: #333D29;
---body-paragraph-color: #AE9C7A;
+--body-paragraph-color: #AE9C7A; /* keep hex value for future design reference */
 
 --link-base: #7F4F24;
 /* link opacity drops instead of changing colors */
@@ -16,7 +16,7 @@
 }
 
 /* PSD with background texture/image in the images folder */
-body { background-color: var(--body-color); }
+body { background-image: url(../images/body_dirt.png); }
 
 .container {
 	display: grid; 
@@ -107,7 +107,7 @@ body { background-color: var(--body-color); }
 }
 
 .container > div > p {
-	background: var(--body-paragraph-color);
+	background: url(../images/paragraph_dirt.png);
 	border-radius:15px;
 	border-style: solid;
 	border-width: 1px;
