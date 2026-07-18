@@ -22,15 +22,15 @@
 	<body>
 		<!-- top of page deco with icon -->
 		<div class="page-head">
-			<a href="../home.html">
+			<a href="../index.html">
 				<img id="logo" src="../images/logo.png" alt="Spizzirri's Reptile Rescue & Rehabilitation">
 			</a>
 		</div>
 		<!-------------------------------->
 		
 		<!------- navigation start ------->
-		<nav class="topnav" id="myTopnav">
-			<a href="../home.html">Home</a>
+		<nav class="topnav" id="navbar">
+			<a href="../index.html">Home</a>
 			<a href="../events.html">Events</a>	
 			<div class="dropdown active">
 				<button class="dropbtn">Ambassador Animals<i class="fa fa-caret-down"></i></button>
@@ -40,11 +40,10 @@
 					<a href="ambassador_snakes.html">Snakes</a>
 				</div>
 			</div>
-			<a href="../testimonials_reviews.html">Testimonials & Reviews</a>
 			<a href="../book_us.html">Book Us</a>
 			<a href="../contact_us.html">Contact Us</a>
 			<!-------- hamburger bars made with unicode decimal code -------->
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			<a href="javascript:void(0);" class="icon" onclick="show_menu()">&#9776;</a>
 		</nav>
 		<!-------- navigation end -------->
 		
@@ -57,11 +56,16 @@
 					<h4>Lucy</h4>
 					<h3>Miss Lucky Lucy</h3>
 					<p>
-						Lucy is an African spurred tortoise and is approximately 12–13 years old. She’s a gentle giant that's not shy about making noise for attention! Lucy loves long walks, dandelion leaves, and flowers. 
-						
+						Lucy is an African spurred tortoise and is approximately 12–13 years old. 
+						She’s a gentle giant that's not shy about making noise for attention! 
+						Lucy loves long walks, dandelion leaves, and flowers. 
 						<br><br>
-						
-						While we were doing an educational show near Chicago Ridge, a local resident reached out for help because they spotted a tortoise wandering along the side of Southwest Highway. We met up with the resident as soon as we could and rescued Lucy. Despite the dire situation, she managed to avoid major injury. Once we brought her home, we tried to locate her owner, but they were never found. She's been a beloved member of the Spizzirri family ever since.
+						While we were doing an educational show near Chicago Ridge, a local resident 
+						spotted a tortoise wandering along the side of Southwest Highway. We went to 
+						the rescue the turtle as soon as possible. Despite the dire situation, she 
+						managed to avoid major injury. Once we brought her home, we tried to locate 
+						her owner, but they were never found. So, we named her Lucky Lucy.
+						She's been a beloved member of the Spizzirri family ever since.
 					</p>
 				</div>
 				
@@ -95,12 +99,13 @@
 		<!------ page container end ------>
 	
 		<!-- return to top button -->
-		<button onclick="topFunction()" id="top_button" title="Go to top">Top</button>
+		<button onclick="go_to_top()" id="top_button" title="Go to top">Back to Top</button>
 		
 		<div class="footer">
 			<p> <!-- footer text and links -->
 				SRRR is an official 501(c)(3) nonprofit<br> Contact Us <a href="tel:+17087049911">708-704-9911</a><br>
-				<a href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/"><i class="fa fa-facebook"></i></a>
+				<a target="_blank" rel="noopener noreferrer"
+				href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/"><i class="fa fa-facebook"></i></a>
 			</p>
 		</div>
 		

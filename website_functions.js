@@ -1,40 +1,39 @@
-// this file holds all the code for the responsive navbar, to top button, and sizing adjustments made for mobile
+// this file contains the JS code for:
+// - the responsive navbar
+// - to top button
+// - sizing adjustments made for mobile devices
 
-// -------------------------------- responsive navbar -------------------------------- //
-function myFunction() {
-	// toggle hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+
+// function that opens and closes the links within the hamburger menu
+function show_menu() {
+	// toggle hiding the navigation menu links when the user clicks on the hamburger menu
+	var x = document.getElementById("navbar");
+	if ( x.className === "topnav" ) { x.className += " responsive"; } 
+	else { x.className = "topnav"; }
 }
-// ----------------------------------------------------------------------------------- //
 
 // ---------------------------------- to top button ---------------------------------- //
+
 let topbutton = document.getElementById("top_button"); // get the button from document
 
 // when the user scrolls down, show the button (toggle it on)
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() { scrollFunction() };
 
 const scroll_amount = 120; // variable that triggers when the to top button shows after scrolling
 
 function scrollFunction() {
-  if (document.body.scrollTop > scroll_amount || document.documentElement.scrollTop > scroll_amount) {
-    topbutton.style.display = "block";
-  } 
-  else {
-    topbutton.style.display = "none";
-  }
+	if ( document.body.scrollTop > scroll_amount || document.documentElement.scrollTop > scroll_amount ) {
+		topbutton.style.display = "block";
+	} 
+	else { topbutton.style.display = "none"; }
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+function go_to_top() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// ----------------------------------------------------------------------------------- //
+// -------------------------------- end to top button -------------------------------- //
 
 // check is used to fix image sizing issues in horizontal mode on mobile
 if( window.innerHeight > window.innerWidth ) {

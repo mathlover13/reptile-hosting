@@ -22,15 +22,15 @@
 	<body>
 		<!-- top of page deco with icon -->
 		<div class="page-head">
-			<a href="home.html">
+			<a href="index.html">
 				<img id="logo" src="./images/logo.png" alt="Spizzirri's Reptile Rescue & Rehabilitation">
 			</a>
 		</div>
 		<!-------------------------------->
 		
 		<!------- navigation start ------->
-		<nav class="topnav" id="myTopnav">
-			<a href="home.html">Home</a>
+		<nav class="topnav" id="navbar">
+			<a href="index.html">Home</a>
 			<a href="events.html">Events</a>	
 			<div class="dropdown">
 				<button class="dropbtn">Ambassador Animals<i class="fa fa-caret-down"></i></button>
@@ -40,58 +40,77 @@
 					<a href="./ambassador_pages/ambassador_snakes.html">Snakes</a>
 				</div>
 			</div>
-			<a href="testimonials_reviews.html">Testimonials & Reviews</a>
 			<a href="book_us.html">Book Us</a>
 			<a href="contact_us.html" class="active">Contact Us</a>
 			<!-------- hamburger bars made with unicode decimal code -------->
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			<a href="javascript:void(0);" class="icon" onclick="show_menu()">&#9776;</a>
 		</nav>
 		<!-------- navigation end -------->
 		
 		<!--------------------------------- page container --------------------------------->
 		<div class="container">
-			<!-- breif/general overview about us -->  
 			<div class="section_titles"> <h2>How to Contact Us</h2> </div>
 			<div class="hcu"> 
-				<p>The best was to contact us is via phone. You can call us at <a href="tel:+17087049911">708-704-9911</a>. You can also reach out to us over email at <a href="mailto:spizzirrireptilerescue@gmail.com">spizzirrireptilerescue@gmail.com</a>. We look forward to speaking with you.</p>
+				<p>The best was to contact us is via phone. You can call us at 
+					<a href="tel:+17087049911">708-704-9911</a>. 
+					You can also reach out to us over email at 
+					<a href="mailto:spizzirrireptilerescue@gmail.com">spizzirrireptilerescue@gmail.com</a>. 
+					We look forward to speaking with you.
+				</p>
 			</div>
-			<div class="wyacimg"> <img class="niko-image" src="./images/niko_photo.jpeg" width="280" height="340" alt="Niko posing with a large lizard."> </div>
+			
+			<div class="wyacimg"> <img class="niko-image" src="./images/niko_photo.jpeg"width="280" height="340" alt="Niko posing with a large lizard."> </div>
 			<div class="wyac">
 				<h4>Who You Are Contacting</h4>
 				<h3>Niko Spizzirri: Lead Ambassador</h3>
 				<p>
-					Niko founded this organization out of a love for exotic animals. He largely cares for and shelters reptiles; however, he also tends to a variety of exotic mammals and fish. Niko dedicates his free time to caring for the shelter's animals and maintaining the facility.
+					Niko founded this organization out of a love for exotic animals. 
+					He largely cares for and shelters reptiles; however, he also tends 
+					to a variety of exotic mammals and fish. Niko dedicates his free 
+					time to caring for the shelter's animals and maintaining the facility.
 				</p>
 			</div>
 			
-			<div class="section_titles"> <h2>Rescue and Surrender Information</h2> </div>
-			
+			<div class="section_titles"> <h2>Rescue and Surrender Information</h2></div>
 			<div class="er">
 				<h4>Inquire About Rescue and Surrender</h4>
 				<p>
-					If you know of animals in need rescue and rehabilitation or you need to surrender your exotics, please call <a href="tel:+17087049911">708-704-9911</a> to get the process started. We will send you procedural forms to fill out before we accept any animals into the facility. Please, do not drop off animals before your forms are approved, thank you.
+					If you know of animals in need rescue and rehabilitation or you need 
+					to surrender your exotics, please call 
+					<a href="tel:+17087049911">708-704-9911</a> to get the process started. 
+					We will send you procedural forms to fill out before we accept any 
+					animals into the facility. Please, do not drop off animals 
+					before your forms are approved, thank you.
 				</p>
+				
 				<h4>What We Request Upon Arrival</h4>
 				<p>
-					If you are surrendering your pets, please transport them in their current cages. Additionally, bring all of the items you currently have in the enclosure(s), and the care items you own for the animals. We will need to use the current enclosures and setups as temporary housing upon arrival.
+					If you are surrendering your pets, please transport them in their 
+					current cages. Additionally, bring all of the items you currently 
+					have in the enclosure(s), and the care items you own for the animals. 
+					We will need to use the current enclosures and setups as temporary 
+					housing upon arrival.
 				</p>
 				
 				<h4>We are a No-kill Shelter</h4>
 				<p>
-					We do not put any of our exotics down due to overwhelming numbers. To manage our capacity, we seek out suitable foster families to care for some of our animals. Additionally, we manage our facility's capacity by placing healthy surrenders up for adoption.
+					We do not put any of our exotics down due to overwhelming numbers. 
+					To manage our capacity, we seek out suitable foster homes 
+					and put healthy surrenders up for adoption.
 				</p>
 			</div>
-			<!-- add an occupancy counter? -->
+			
 		</div>
 		<!------------------------------- page container end ------------------------------->
 	
 		<!-- return to top button -->
-		<button onclick="topFunction()" id="top_button" title="Go to top">Top</button>
+		<button onclick="go_to_top()" id="top_button" title="Go to top">Back to Top</button>
 		
 		<div class="footer">
 			<p> <!-- footer text and links -->
 				SRRR is an official 501(c)(3) nonprofit<br> Contact Us <a href="tel:+17087049911">708-704-9911</a><br>
-				<a href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/"><i class="fa fa-facebook"></i></a>
+				<a target="_blank" rel="noopener noreferrer"
+				href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/"><i class="fa fa-facebook"></i></a>
 			</p>
 		</div>
 

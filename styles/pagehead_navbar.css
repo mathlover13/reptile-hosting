@@ -22,6 +22,7 @@
 	max-height: 300px;
 	max-width: 300px;
 }
+/* --------------------- end banner --------------------- */
 
 @media screen and (max-width: 450px) {
 	/* queries to change the grid layout on smaller screens */
@@ -32,13 +33,9 @@
 		margin-right: auto;
 	}
 }
-/* --------------------- end banner --------------------- */
-
 
 /* ------------------- top navigation ------------------- */
-.topnav a.icon {
-	font-size:16px;
-}
+.topnav a.icon { font-size:16px; }
 .topnav {
 	overflow: hidden;
 	background-color: var(--navbar-color);
@@ -66,7 +63,7 @@
 /* ----------------- end top navigation ----------------- */
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
 	/* adjusting button to work with nav by hiding when the bar collapses */
 	.topnav a:not(:first-child), .dropdown .dropbtn { display: none; }
 	
@@ -78,14 +75,14 @@
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
 	.topnav.responsive { position: relative; }
 	.topnav.responsive .icon {
 		position: absolute;
 		right: 0;
 		top: 0;
-		/* need to adjust padding when menu opens*/
-		/* to cover up outline on menu */
+		/* need to adjust padding when menu opens to cover 
+		up bottom outline on menu where button is */
 		padding-top: 18px;
 		padding-bottom: 17px;
 	}
@@ -95,7 +92,7 @@
 		text-align: left;
 	}
 	.topnav.responsive .dropdown { float: none; }
-	.topnav.responsive .dropdown-content { position: relative;width: 100%;
+	.topnav.responsive .dropdown-content { position: relative; width: 100%;
 		text-align: left; }
 	.topnav.responsive .dropdown .dropbtn {
 		display: block;
@@ -103,4 +100,3 @@
 		text-align: left;
 	}
 }
-/* ---------------- end drop down button ---------------- */

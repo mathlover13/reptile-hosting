@@ -21,15 +21,15 @@
 	<body>
 		<!-- top of page deco with icon -->
 		<div class="page-head">
-			<a href="home.html">
+			<a href="index.html">
 				<img id="logo" src="./images/logo.png" alt="Spizzirri's Reptile Rescue & Rehabilitation">
 			</a>
 		</div>
 		<!-------------------------------->
 		
 		<!------- navigation start ------->
-		<nav class="topnav" id="myTopnav">
-			<a href="home.html">Home</a>
+		<nav class="topnav" id="navbar">
+			<a href="index.html">Home</a>
 			<a href="events.html" class="active">Events</a>	
 			<div class="dropdown">
 				<button class="dropbtn">Ambassador Animals<i class="fa fa-caret-down"></i></button>
@@ -39,34 +39,48 @@
 					<a href="./ambassador_pages/ambassador_snakes.html">Snakes</a>
 				</div>
 			</div>
-			<a href="testimonials_reviews.html">Testimonials & Reviews</a>
 			<a href="book_us.html">Book Us</a>
 			<a href="contact_us.html">Contact Us</a>
 			<!-------- hamburger bars made with unicode decimal code -------->
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			<a href="javascript:void(0);" class="icon" onclick="show_menu()">&#9776;</a>
 		</nav>
 		<!-------- navigation end -------->
 		
 		<!--------------------------------- page container --------------------------------->
 		<div class="container">
 
-			<div class="section_titles"><h2>Coming Soon!</h2></div>
-		
-			<div class="uc">
-					<h4>Page Under Construction</h4>
-					<p>This website is being constructed and updated. Thank your for your patience! </p>
-				</div>
+			<div class="calendartitle"><h4>Event Calendar</h4></div>
+			<div class="eventcalendar">
+			<!-- style options are a part of the link -->
+					<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&
+					showTitle=0&src=ZWExZGQ3NTk4OWMxMWYyZDFlY2FkMWNiMGE2ZTFkNzdkN2IzNzMxMGNlMzkwYTIwN2EwOTQzOTQ5MjExYzFhOUBncm91
+					cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237cb342" style="border:solid 1px #777" width="800" height="600" 
+					frameborder="0" scrolling="no"></iframe>
+					
+					<!--  to style embeded link css, log into 
+					Google calendar on desktop. Locate settings 
+					for my calendars. Under this section, 
+					select the disered calendar (SRRR_Events) -->
+			</div>
+			<div class="ecn">
+				<p style="font-size: 15px;">*Note: This calendar is best viewed on your computer's browser.</p>
+				<p> We also post about our events on 
+					<a href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/">facebook!</i></a>
+				</p>
+			</div>
+			
 			
 		</div>
 		<!------------------------------- page container end ------------------------------->
 	
 		<!-- return to top button -->
-		<button onclick="topFunction()" id="top_button" title="Go to top">Top</button>
+		<button onclick="go_to_top()" id="top_button" title="Go to top">Back to Top</button>
 		
 		<div class="footer">
 			<p> <!-- footer text and links -->
 				SRRR is an official 501(c)(3) nonprofit<br> Contact Us <a href="tel:+17087049911">708-704-9911</a><br>
-				<a href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/"><i class="fa fa-facebook"></i></a>
+				<a target="_blank" rel="noopener noreferrer"
+				href="https://www.facebook.com/p/Spizzirri-Reptile-Rescue-Rehab-100077496616713/"><i class="fa fa-facebook"></i></a>
 			</p>
 		</div>
 
