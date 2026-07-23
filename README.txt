@@ -1,12 +1,11 @@
 Created by: Jay Widlacki; summer of 2025
 
 ABOUT THE WEBSITE'S CODE:
-- index.html is the home page. GitHub hosting requires each website have an index file
-Instead of a redirect to the home page, i opted to put all of my home code in index.
-I find it's faster than have the page redirect to another HTML file.
+- index.html is the home page. GitHub hosting requires each website have an index file. 
+I put my home page code in index.html.
 	+ NOTE: index's CSS code is still in the file "home.css" in styles folder
 
-FILES:
+DIRECTORY INFORMATION:
 - CSS files are in the styles folder
 - Most HTML is in main directory; the 3 ambassador pages have their own folder
 called "ambassador_animals" in the main directory.
@@ -15,9 +14,13 @@ create the background images are located in the subdirectory psd files.
 	
 -------------------------------------- SOURCES SECTION --------------------------------------
 
-Resources Referenced to Create Site:
+Resources Referenced While Building website:
 - target="_blank": https://stackoverflow.com/questions/15551779/open-link-in-new-tab-or-window
 - w3schools: https://www.w3schools.com/
+- adding google fonts: https://www.youtube.com/watch?v=iIqgW-stZmE&t
+- grabing width with JS: 
+	+ https://stackoverflow.com/a/294273
+	+ https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
 
 Resource Images:
 - dirt: https://commons.wikimedia.org/wiki/File:Dirt.jpg

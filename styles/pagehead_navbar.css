@@ -1,10 +1,14 @@
 /* code to style the banner, logo, and navigation bar */
 
 :root {
+	/* colors */
 	--banner-background: #8dc641; /* bright green to match logo */
 	--navbar-color: #333d29; /* dark green for navbar base */
 	--buttons-color: #414833; /* for the to top button + navbar */
 	--button-hover: #C2C5AA; /* for hovering and ambassador dropdown*/
+	
+	/* others */
+	--buttons-font: 20px;
 }
 
 /* ----------------------- banner ----------------------- */
@@ -35,7 +39,7 @@
 }
 
 /* ------------------- top navigation ------------------- */
-.topnav a.icon { font-size:16px; }
+
 .topnav {
 	overflow: hidden;
 	background-color: var(--navbar-color);
@@ -48,21 +52,24 @@
 	background-color: var(--buttons-color);
 	color: #f2f2f2;
 	text-align: center;
-	padding: 16px 16px;
+	padding: 17px 17px;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: var(--buttons-font);
 }
 
 .topnav .active {
 	background-color: var(--navbar-color);
 	color: white;
 }
-/* hides icon for fullscreen view */
-.topnav .icon { display: none;  }
-
 /* ----------------- end top navigation ----------------- */
 
+.topnav .icon { 
+	display: none;  
+	padding: 15px 15px;
+}
+.topnav a.icon { font-size:20px; }
 
+/* hides icon for fullscreen view */
 @media screen and (max-width: 700px) {
 	/* adjusting button to work with nav by hiding when the bar collapses */
 	.topnav a:not(:first-child), .dropdown .dropbtn { display: none; }
@@ -70,8 +77,6 @@
 	.topnav a.icon {
 		float: right;
 		display: block;
-		padding-top: 17px;
-		padding-bottom: 16px;
 	}
 }
 
@@ -81,10 +86,7 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		/* need to adjust padding when menu opens to cover 
-		up bottom outline on menu where button is */
-		padding-top: 18px;
-		padding-bottom: 17px;
+		padding:16px;
 	}
 	.topnav.responsive a {
 		float: none;
@@ -92,8 +94,11 @@
 		text-align: left;
 	}
 	.topnav.responsive .dropdown { float: none; }
-	.topnav.responsive .dropdown-content { position: relative; width: 100%;
-		text-align: left; }
+	.topnav.responsive .dropdown-content { 
+		position: relative; 
+		width: 100%;
+		text-align: left; 
+	}
 	.topnav.responsive .dropdown .dropbtn {
 		display: block;
 		width: 100%;

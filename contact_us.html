@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head lang="en">
 		<meta charset="UTF-8">
-		<!-- tag allows site to work on all devices and screen resolutions -->
+		<!----- tag allows site to work on all devices and screen resolutions ----->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- load fonts immediately after setting metadata to optimize load time -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,
+		500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:
+		ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		
 		<link rel="stylesheet" href="styles/pagehead_navbar.css">
 		<link rel="stylesheet" href="styles/ambassador_button.css">
@@ -33,8 +40,8 @@
 			<a href="index.html">Home</a>
 			<a href="events.html">Events</a>	
 			<div class="dropdown">
-				<button class="dropbtn">Ambassador Animals<i class="fa fa-caret-down"></i></button>
-				<div class="dropdown-content">
+				<button class="dropbtn" id="ambassador_button" onmouseover="set_adropdown_width()">Ambassador Animals<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content" id="ambassador_dropdown">
 					<a href="./ambassador_pages/ambassador_lizards.html">Lizards</a>
 					<a href="./ambassador_pages/ambassador_turtles.html">Turtles</a>
 					<a href="./ambassador_pages/ambassador_snakes.html">Snakes</a>
