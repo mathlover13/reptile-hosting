@@ -1,3 +1,14 @@
+/* class used to control the placement of images in mobile view */
+.container .grid_image { display: grid; }
+/* this is future-proofing */
+/* there might be imgaes in the future */
+@media screen and (max-width: 900px) {
+	.container .grid_image { 
+	/* center all images on page */
+		grid-column: 1/ span 3;
+		place-items: center;
+	}
+}
 .container .calendartitle { grid-column: 1 / span 3; }
 .container .eventcalendar { grid-column: 1 / span 3; }
 .container .ecn { grid-column: 1 / span 3; }

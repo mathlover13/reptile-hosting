@@ -1,0 +1,34 @@
+/* class used to control the placement of images in mobile view */
+.container .grid_image { 
+	display: grid;
+	grid-column: 1; 
+	max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+	.container .grid_image { 
+	/* center all images on page */
+		grid-column: 1/ span 3;
+		place-items: center;
+	}
+}
+
+.container .ryot_text { grid-column: 1/ span 3; }
+.container .scarlet_text { grid-column: 1/ span 3; }
+.container .dez_text { grid-column: 1/ span 3; }
+.container .salazar_text { grid-column: 2/ span 2; }
+
+@media screen and (max-width: 900px) {
+	/* when the viewport too small, make content in 1 column */
+	.container .ryot_text { grid-column: 1/ span 3; }
+	.container .scarlet_text { grid-column: 1/ span 3; }
+	.container .dez_text { grid-column: 1/ span 3; }
+	.container .salazar_text { grid-column: 1/ span 3; }
+	/* grid container updated in container styles */
+	
+	.container .grid_image { 
+	/* center all images on page */
+		grid-column: 1/ span 3;
+		place-items: center;
+	}
+}

@@ -14,11 +14,11 @@ if( window.innerHeight > window.innerWidth ) {
 // function adjusts the width of the ambassador dropdown to match the button's width
 function set_adropdown_width() {
 	// get button width currently displayed
-	var ambassador_button= document.querySelector("#ambassador_button");
+	var ambassador_button = document.querySelector(".dropbtn");
 	var position_info = ambassador_button.getBoundingClientRect();
 	var width = position_info.width;
 	// change dropdown width
-	var ambassador_dropdown = document.getElementById("ambassador_dropdown");
+	var ambassador_dropdown = document.querySelector(".dropdown-content");
 	ambassador_dropdown.style.width = width + "px";
 }
 

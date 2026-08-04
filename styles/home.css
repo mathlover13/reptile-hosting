@@ -1,14 +1,26 @@
+/* class used to control the placement of images in mobile view */
+.container .grid_image { 
+	display: grid;
+	grid-column: 1; 
+	max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+	.container .grid_image { 
+	/* center all images on page */
+		grid-column: 1/ span 3;
+		place-items: center;
+	}
+}
 /* when the viewport too small, make content in 1 column */
 .container .wwa_text { grid-column: 2/ span 2; }
 .container .vri_text { grid-column: 1 / span 3; }
 .container .vri_text p { margin-bottom: 10px; }
-
 .container .ms_text { grid-column: 1 / span 3; }
 .container .ms_text p { margin-bottom: 10px; }
 
 @media screen and (max-width: 900px) {
 	/* when the viewport too small, make content in 1 column */
-	.container .wwa_image { grid-column: 1/ span 3; }
 	.container .wwa_text { grid-column: 1/ span 3; }
 	.container .vri_text { grid-column: 1/ span 3; }
 	.container .vri_text { grid-column: 1/ span 3; }

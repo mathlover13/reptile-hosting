@@ -11,6 +11,12 @@
 	--buttons-font: 20px;
 }
 
+.bar-banner {
+	overflow: hidden;
+	background-image: url(../images/branches_leaves.png);
+	padding: 2px; /* navbar outlines hamburger menu */
+}
+
 /* ----------------------- banner ----------------------- */
 .page-head {
 	/* top of page banner */

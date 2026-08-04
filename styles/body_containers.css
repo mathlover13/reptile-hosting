@@ -1,18 +1,18 @@
-/* code to style the body elements and containers */
+/* CSS file contains styles for body content across website:
+	- grid contents
+	- body text
+	- body images
+*/
 :root {
---body-color: #A68A64; /* keep hex value for future design reference */
---font-size: 25px;
-
---image-width: 2vw + 400px;
---niko-width: 2vw + 250px; /* image is smaller; do not shrink in app view */
-
---header-color: #656D4A;
---border-color: #333D29;
---body-paragraph-color: #AE9C7A; /* keep hex value for future design reference */
-
---link-base: #7F4F24;
-/* link opacity drops instead of changing colors */
---link-active: #875A23; /* color upon click */
+	--body-color: #A68A64; /* keep hex value for future design reference */
+	--image-width: 2vw + 400px;
+	--header-color: #656D4A;
+	--border-color: #333D29;
+	--body-paragraph-color: #AE9C7A; /* keep hex value for future design reference */
+	--font-size: 25px;
+	--link-base: #7F4F24;
+	/* link opacity drops instead of changing colors */
+	--link-active: #875A23; /* color upon click */
 }
 
 /* ----------------------------------------------------- */
@@ -37,7 +37,10 @@
 /* ----------------------------------------------------- */
 
 /* PSD with background texture/image in the images folder */
-body { background-image: url(../images/body_dirt.png); font-family: "figtree", "Open Sans", "Times New Roman";}
+body { 
+	background-image: url(../images/body_dirt.png); 
+	font-family: "figtree", "Open Sans", "Times New Roman";
+}
 
 
 .container {
@@ -55,16 +58,8 @@ body { background-image: url(../images/body_dirt.png); font-family: "figtree", "
 }
 
 .container .image {
+	display: grid; 
 	width: calc(var(--image-width));
-	border-radius: 25px;
-	background-color: var(--header-color);
-	border-style: solid;
-	border-width: 1px;
-	border-color: var(--border-color);
-}
-
-.container .niko-image {
-	width: calc(var(--niko-width));
 	border-radius: 25px;
 	background-color: var(--header-color);
 	border-style: solid;
@@ -100,9 +95,10 @@ body { background-image: url(../images/body_dirt.png); font-family: "figtree", "
 .container .section_titles {
 	/* all of the large h2 headings on every page */
 	grid-column: 1 / span 3;
-	border-radius: 25px;
 	background-color: var(--header-color);
+	
 	border-style: solid;
+	border-radius: 25px;
 	border-width: 1px;
 	border-color: var(--border-color);
 }
