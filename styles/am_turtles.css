@@ -8,12 +8,12 @@
 		place-items: center;
 	}
 }
-.container .lucy { grid-column: 1/ span 3; }
+.container .lucy_text { grid-column: 1/ span 3; }
 .container .nugget_text { grid-column: 1/ span 3; }
 .container .tator_text { grid-column: 1/ span 3; }
 
 @media screen and (max-width: 900px) {
-	.container .lucy { grid-column: 1/ span 3; }
+	.container .lucy_text { grid-column: 1/ span 3; }
 	.container .nugget_text { grid-column: 1/ span 3; }
 	.container .tator_text { grid-column: 1/ span 3; }
 }
