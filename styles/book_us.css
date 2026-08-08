@@ -12,9 +12,9 @@
 	}
 }
 
-.container .center_image { 
+.container .right_image { 
 	display: grid;
-	grid-column: 2; 
+	grid-column: 3; 
 	max-width: 100%;
 }
 @media screen and (max-width: 900px) {
