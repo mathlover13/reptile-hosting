@@ -15,31 +15,17 @@
 	--link-active: #875A23; /* color upon click */
 }
 
-/* ----------------------------------------------------- */
-/* <uniquifier>: Use a unique and descriptive class name */
- 
-/* <weight>: Use a value from 300 to 800 */
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 400;
+	src: url(./fonts/open-sans/opensans-bold-webfont.woff2) format(woff2);
+	src: url(./fonts/open-sans/opensans-bold-webfont.woff) format(woff);
 }
-/* <weight>: Use a value from 300 to 900 */
-.figtree-<uniquifier> {
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-/* ----------------------------------------------------- */
 
 /* PSD with background texture/image in the images folder */
 body { 
 	background-image: url(../images/body_dirt.png); 
-	font-family: "figtree", "Open Sans", "Times New Roman";
+	font-family: "Open Sans", "Times New Roman";
 }
 
 

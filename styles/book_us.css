@@ -24,10 +24,8 @@
 		place-items: center;
 	}
 }
-
 .container .bu_text { grid-column: 2/ span 2; }
 .container .wsu_text { grid-column: 1/ span 2; }
-
 
 .container .cscf { grid-column: 1/ span 3; }
 .container .bs { grid-column: 1/ span 3; }

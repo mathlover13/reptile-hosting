@@ -71,7 +71,7 @@
 
 .topnav .icon { 
 	display: none;  
-	padding: 15px 15px;
+	padding: 16px 16px;
 }
 .topnav a.icon { font-size:20px; }
 
@@ -92,7 +92,7 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		padding:16px;
+		padding:18px;
 	}
 	.topnav.responsive a {
 		float: none;

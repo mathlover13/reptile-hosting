@@ -28,7 +28,8 @@ Resource Images:
 - tree_bark: https://pixabay.com/photos/bark-tree-nature-texture-wood-70903/
 - branches_leaves: https://uk.pinterest.com/pin/oak-tree-leaves-in-the-new-forest-dorset--388646642814870495/
 
-Palette Generator:
+Design Elements:
+- font: https://www.fontsquirrel.com/
 - color palette generator: https://coolors.co/palette/582f0e-7f4f24-936639-a68a64-b6ad90-c2c5aa-a4ac86-656d4a-414833-333d29
 
 ------------------------------------ END SOURCES SECTION ------------------------------------
