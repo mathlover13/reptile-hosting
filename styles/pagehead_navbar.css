@@ -73,18 +73,6 @@
 	display: none;  
 	padding: 16px 16px;
 }
-.topnav a.icon { font-size:20px; }
-
-/* hides icon for fullscreen view */
-@media screen and (max-width: 780px) {
-	/* adjusting button to work with nav by hiding when the bar collapses */
-	.topnav a:not(:first-child), .dropdown .dropbtn { display: none; }
-	
-	.topnav a.icon {
-		float: right;
-		display: block;
-	}
-}
 
 @media screen and (max-width: 780px) {
 	.topnav.responsive { position: relative; }
@@ -109,5 +97,23 @@
 		display: block;
 		width: 100%;
 		text-align: left;
+	}
+}
+@media screen and (max-width: 420px) {
+	.topnav.responsive .icon {
+		padding:18px;
+	}
+	
+}
+.topnav a.icon { font-size:20px; }
+
+/* hides icon for fullscreen view */
+@media screen and (max-width: 780px) {
+	/* adjusting button to work with nav by hiding when the bar collapses */
+	.topnav a:not(:first-child), .dropdown .dropbtn { display: none; }
+	
+	.topnav a.icon {
+		float: right;
+		display: block;
 	}
 }
