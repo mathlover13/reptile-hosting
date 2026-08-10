@@ -1,12 +1,12 @@
 /* class used to control the placement of images in mobile view */
-.container .grid_image { 
+.container .column1_imagecolumn1_image { 
 	display: grid;
 	grid-column: 1; 
 	max-width: 100%;
 }
 
 @media screen and (max-width: 900px) {
-	.container .grid_image { 
+	.container .column1_image { 
 	/* center all images on page */
 		grid-column: 1/ span 3;
 		place-items: center;
