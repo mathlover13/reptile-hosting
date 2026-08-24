@@ -1,7 +1,7 @@
 /* class used to control the placement of images in mobile view */
 .container .column1_image { 
 	display: grid;
-	grid-column: 1; 
+	grid-column: 1;
 	max-width: 100%;
 }
 

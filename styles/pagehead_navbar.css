@@ -8,7 +8,7 @@
 	--button-hover: #C2C5AA; /* for hovering and ambassador dropdown*/
 	
 	/* others */
-	--buttons-font: 20px;
+	--text-size: 21px;
 }
 
 .bar-banner {
@@ -49,18 +49,20 @@
 .topnav {
 	overflow: hidden;
 	background-color: var(--navbar-color);
-	padding: 2px; /* navbar outlines hamburger menu */
+	/* padding used to create outline for navbar buttons */
+	padding: 2px; 
 }
 
 .topnav a {
-	float: left;
-	display: block;
 	background-color: var(--buttons-color);
 	color: #f2f2f2;
+	float: left;
+	display: block;
+	padding: 17px;
+	
 	text-align: center;
-	padding: 17px 17px;
 	text-decoration: none;
-	font-size: var(--buttons-font);
+	font-size: var(--text-size);
 }
 
 .topnav .active {
@@ -70,29 +72,30 @@
 /* ----------------- end top navigation ----------------- */
 
 .topnav .icon { 
-	display: none;  
-	padding: 16px 16px;
+	display: none; /* hides icon for fullscreen view */
+	font-size: var(--text-size);
 }
-.topnav a.icon { font-size:20px; }
 
-/* hides icon for fullscreen view */
 @media screen and (max-width: 780px) {
-	/* adjusting button to work with nav by hiding when the bar collapses */
+	/* hides all nav buttons to different pages except the first one */
 	.topnav a:not(:first-child), .dropdown .dropbtn { display: none; }
-	
 	.topnav a.icon {
+		/* display dropdown hamburger bars */
 		float: right;
 		display: block;
 	}
 }
-/* padding: top, right, bottom, left; */
+
 @media screen and (max-width: 780px) {
+	/* when the hamburger button is clicked, the .responsive class
+	   is added to all of the topnav elements. adding the class
+	   onclick ensures CSS is only alters dropped down menu */
 	.topnav.responsive { position: relative; }
 	.topnav.responsive .icon {
 		position: absolute;
 		right: 0;
 		top: 0;
-		padding:17px;
+		padding: 18px;
 	}
 	.topnav.responsive a {
 		float: none;
@@ -110,8 +113,4 @@
 		width: 100%;
 		text-align: left;
 	}
-}
-@media screen and (max-width: 420px) {
-	/* padding at bottom added for mobile */
-	.topnav.responsive .icon { padding: 17px 17px 18px 17px; }
 }
