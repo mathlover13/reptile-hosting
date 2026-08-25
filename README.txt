@@ -4,6 +4,7 @@ ABOUT THE WEBSITE'S CODE:
 - index.html is the home page. GitHub hosting requires each website have an index file. 
 I put my home page code in index.html for simplicity.
 	+ NOTE: index's CSS code is still in the file "home.css" in styles folder
+- this website is built with HTML, CSS, and JS because GitHub hosting only supports static pages
 
 DIRECTORY INFORMATION:
 - CSS files are in the styles folder

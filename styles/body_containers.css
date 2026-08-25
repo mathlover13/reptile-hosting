@@ -17,10 +17,11 @@
 
 @font-face {
 	font-family: "Open Sans";
+	src: url("../fonts/open-sans/opensans-regular-webfont.woff") format('woff');
 	font-weight: 400;
-	src: url(./fonts/open-sans/opensans-bold-webfont.woff2) format(woff2);
-	src: url(./fonts/open-sans/opensans-bold-webfont.woff) format(woff);
+	font-style: normal;
 }
+
 
 /* PSD with background texture/image in the images folder */
 body { 
