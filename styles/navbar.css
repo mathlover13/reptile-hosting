@@ -1,0 +1,84 @@
+:root {
+	/* colors */
+	--navbar-color: #333d29; /* dark green for navbar base */
+	--buttons-color: #414833; /* for the to top button + navbar */
+	--button-hover: #C2C5AA; /* for hovering and ambassador dropdown*/
+	
+	/* others */
+	--text-size: 21px;
+}
+
+.topnav {
+	background-color: var(--navbar-color);
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	/* padding used to create outline for navbar buttons */
+	padding: 2px;
+	
+}
+
+.topnav a {
+	background-color: var(--navbar-color);
+	color: #f2f2f2;
+	float: left;
+	display: block;
+	padding: 17px;
+	text-decoration: none;
+	font-size: var(--text-size);
+	display: inline-block;
+}
+
+.topnav .icon { 
+	display: none; /* hides icon for fullscreen view */
+	font-size: var(--text-size);
+}
+
+@media screen and (max-width: 780px) {
+	/* switch to left side button display for menu upon shrinking */
+	.topnav { 
+		display: block; 
+	}
+
+	/* hides all nav buttons to different pages except the first one */
+	.topnav a:not(:first-child), .dropdown .dropbtn { display: none; }
+	.topnav a.home_button {
+		width: 100%;
+	}
+	.topnav a.icon {
+		/* display dropdown hamburger bars */
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	/* when the hamburger button is clicked, the .responsive class
+	   is added to all of the topnav elements. adding the class
+	   onclick ensures CSS is only alters dropped down menu */
+	.topnav.responsive { position: relative; }
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+		/* add 1px to padding upon menu icon activation to
+		cover the padding outline around the navbar */
+		padding: 18px;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav.responsive .dropdown { float: none; }
+	.topnav.responsive .dropdown-content { 
+		position: relative; 
+		width: 100%;
+		text-align: left; 
+	}
+	.topnav.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}

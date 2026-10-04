@@ -10,9 +10,9 @@ DIRECTORY INFORMATION:
 - CSS files are in the styles folder
 - Most HTML is in main directory; the 3 ambassador pages have their own folder
 called "ambassador_animals" in the main directory.
-- The Images contains the images on the site. The graphic design files used to 
+- The images folder contains the images on the site. The graphic design files used to 
 create the background images are located in the subdirectory psd files.
-	
+
 -------------------------------------- SOURCES SECTION --------------------------------------
 
 Resources Referenced While Building website:
@@ -35,11 +35,15 @@ Design Elements:
 
 ------------------------------------ END SOURCES SECTION ------------------------------------
 
+PALETTE HEX COLORS:
+- ICON:
+	+ bright green in logo: #8dc641;
+- NAVBAR:
+	+ dark green: #333d29;
+	+ buttons less dark green: #414833;
+	+ button hover lighter green: #C2C5AA;
+
 Acknowledgments:
 I will always be greatful that Spizzirri's Reptile Rescue & Rehabilitation took my lizard 
 in. He was very sick, and I didn't know what to do. Niko took my lizard in and he made a 
 full recovery. Thank you everyone at SRRR for what you do!
-
-
-TO DO:
-change footer image to dirt and make body tree bark, then leaves on top

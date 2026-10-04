@@ -1,0 +1,29 @@
+:root {
+	/* colors */
+	--navbar-color: #333d29; /* dark green for navbar base */
+	--buttons-color: #414833; /* for the to top button + navbar */
+}
+
+#top_button {
+	/* functionality + placement */
+	display: none; /* button hidden by default */
+	position: sticky;
+	z-index: 1;
+	bottom: 135px; /* place the button at the bottom of the page */
+	float: right;
+	
+	/* text + cursor */
+	color: white; /* text color */
+	font-size: 21px;
+	cursor: pointer; /* add a mouse pointer on hover */
+	
+	/* design + layout */
+	background-color: var(--buttons-color);
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	padding: 15px;
+	margin-right: 15px;
+}
+
+#top_button:hover { background-color: var(--navbar-color); } /* change color on hover */

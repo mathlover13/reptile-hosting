@@ -27,6 +27,7 @@
 body { 
 	background-image: url(../images/body_dirt.png); 
 	font-family: "Open Sans", "Times New Roman";
+	margin: 0px;
 }
 
 

@@ -1,0 +1,64 @@
+/* code to style to top button and footer */
+:root {
+	--link-color: #A68A64; /* base color for link */
+	/* link hover lower opacity */
+	--link-active: #875A23; /* color upon click */
+	--link-visited: #291C0B;
+
+	/* footer fa fa icon lowers opacity on hover */
+	--fa-icons: #A4AC86;
+	--footer-color: #2D1807;
+}
+
+/* ----------------------- footer ----------------------- */
+.footer .fa {
+	/* fa footer icons */
+	color: var(--fa-icons);
+	font-size: 20px;
+	width: 20px;
+	text-decoration: none;
+	padding-top: 5px; /* space out icons from text */
+}
+
+.fa:hover { opacity: 0.7; } /* lower icon opacity upon hover*/
+
+.footer {
+	/* functionality + placement */
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	margin-top: 60px; /* lowers footer below top button */
+	
+	/* design */
+	background-image: url(../images/footer.png);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	/* text */
+	color: white;
+	text-align: center;
+	line-height: 1.5;
+}
+/* --------------------- end footer --------------------- */
+
+/* -------------- footer styling links ------------------ */
+.footer a:link {
+	text-decoration: none;
+	color: var(--link-color);
+}
+
+.footer a:hover  {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+.footer a:active {
+	text-decoration: none;
+	color: var(--link-active);
+}
+
+.footer a:visited {
+	text-decoration: none;
+	color: var(--link-visited);
+}
+/* ---------------- end styling links ------------------- */
